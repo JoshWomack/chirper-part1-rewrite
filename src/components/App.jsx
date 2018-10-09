@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import PageHeader from "./PageHeader";
-import CreateChirpCards from "./ChirpCards";
+import Timeline from "./Timeline";
 import CreateChirpForm from "./CreateChirpForm";
 
 class App extends Component {
@@ -76,7 +76,7 @@ class App extends Component {
       return (
         <>
           <PageHeader handleToggleCreateChirp={this.handleToggleCreateChirp} />
-          <CreateChirpCards chirps={this.state.chirps} />
+          <Timeline chirps={this.state.chirps} />
         </>
       );
     } else {
